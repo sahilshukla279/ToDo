@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ToDo.</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<div class="nav">
+    <div class="title" id="title"><h1><a href="todo.html">ToDo.</a></h1></div>
+    <div class="wrapper">
+        <input type="checkbox" id="btn" hidden>
+        <label for="btn" class="menu-btn">
+        <i id="bars" class="fas fa-bars"></i>
+        <i id="times" class="fas fa-times"></i>
+        </label>
+        <nav id="sidebar">
+            <h1 id="logo">ToDo.</h1>
+           <ul class="solid_color">
+              <ul class="colour_dd"><h3 id="sc">Solid Colour</h3>
+                <li><button type="button" id="orange" onclick="orange()"></button> 
+                    <button type="button" id="yellow" onclick="yellow()"></button>
+                </li>
+                <li><button type="button" id="blue" onclick="blue()"></button>
+                    <button type="button" id="white" onclick="white()"></button>
+                </li>
+                <li><button type="button" id="purple" onclick="purple()"></button> 
+                    <button type="button" id="red" onclick="red()"></button>
+                </li>
+              </ul>
+            <ul class="gradient_color">
+                <ul class="colour_gd"><h3 id="gc"> Gradient Color</h3>
+                  <li><button id="BP" type="button" onclick="BP()"></button> 
+                      <button id="OY" type="button" onclick="OY()"></button>
+                  </li>
+                  <li><button id="BB" type="button" onclick="BB()"></button> 
+                      <button id="RP" type="button" onclick="RP()"></button>
+                 </li>
+                  <li><button id="AB" type="button" onclick="AB()"></button> 
+                      <button id="RO" type="button" onclick="RO()"></button>
+                  </li>
+              </ul>
+              <div class="icons" id="icons">
+                <a href="https://www.facebook.com/profile.php?id=100008146035214"><i id="fb"class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/SaahilShukla"><i id="tw" class="fab fa-twitter"></i></a>
+                <a href="https://github.com/sahilshukla279"><i  id="gh" class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saahil-shukla-4b5182201/"><i id="ln" class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@sahilshukla279"><i id="me" class="fab fa-medium"></i></a>
+              </div>
+           </ul>
+           <h2 id="ss">By: Saahil Shukla</h2>
+        </nav>
+     </div>
+    </div>
+
+
+<body>
+    <div class="card">
+        <div class="container">
+            <div class="newtask" id="newtask">
+                <input type="text" placeholder="Task to be done..">
+                <button id="push">Add</button>
+            </div>
+            <div id="tasks"></div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <h2 id="100day">#100DaysofCode</h2>
+</div>
+    <!--Script-->
+    <script src="script.js"></script>
+    
+
+</body>
+
+
+
+
+
+</html>
